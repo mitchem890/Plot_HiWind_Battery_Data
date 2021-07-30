@@ -11,6 +11,13 @@ def CleanUpBatteryLogs(file, headers):
     #print(df)
     return df
 
+def Find_100_SOC_Trigger(df):
+    if (df['Voltage']/7 > 4.10 AND df[104/25]) OR (df['Voltage']/7 > 4.20) OR (df['Current'] > -1):
+        SOC = 100
+    elif :
+       
+    
+    return
 
 def CleanUpManualLogs(file):
     headers = ['Date Time','Charge/Discharge Cycle','Current Benchtop','Voltage Benchtop','Voltage Multimeter',
